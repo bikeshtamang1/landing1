@@ -1,0 +1,394 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Container */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+}
+
+/* Header */
+header {
+    background-color: #212529;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.actions input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.filter-btn, .login-btn {
+    background-color: #17a2b8;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #007bff, #6610f2);
+    color: white;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #ffc107;
+    border: none;
+    padding: 10px 20px;
+    color: #333;
+    font-size: 1em;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cta-btn.secondary {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Casino List */
+.casino-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+}
+
+.casino-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.casino-card img {
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.casino-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.casino-card p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.casino-card button {
+    background-color: #17a2b8;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 50px;
+    background-color: #f1f1f1;
+    text-align: left;
+    border-radius: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-radius: 2px;   
+    border: 1px solid black;
+}
+
+.faq-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+.faq {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* FAQ item styling */
+.faq-item {
+    border: 1px solid black; /* Adds a 1px black border */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Optional: rounds the corners */
+}
+
+/* FAQ item question styling */
+.faq-item h3 {
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 0;
+    color: #0073e6;
+}
+
+/* FAQ item answer styling (initially hidden, can be toggled with JavaScript) */
+.faq-content {
+    display: none; /* Hidden by default */
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Toggle FAQ item border color on hover */
+.faq-item:hover {
+    border-color: #333; /* Optional: darkens the border color on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #ffc107;
+    margin: 0 10px;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+/* CSS remains largely the same as in the previous version, but ensure this part is added for FAQ toggling */
+
+.faq-item h3 {
+    cursor: pointer;
+}
+
+.faq-content {
+    display: none;
+    padding-top: 5px;
+    font-size: 0.9em;
+    color: #666;
+}
+/* Start Playing Button */
+.cta-btn {
+    background-color: #ffc107;
+    border: none;
+    padding: 10px 20px;
+    color: #333;
+    font-size: 1em;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cta-btn:hover {
+    background-color: #ffb300; /* Darken the background color on hover */
+    transform: scale(1.05); /* Slightly increase size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.cta-btn.secondary {
+    background-color: #343a40;
+    color: white;
+}
+
+.cta-btn.secondary:hover {
+    background-color: #444a50; /* Darken secondary button on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Play Now Button */
+.casino-card button {
+    background-color: #17a2b8;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect for Play Now Button */
+.casino-card button:hover {
+    background-color: #138496; /* Slightly darker background color on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+/* Navbar Links */
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 8px 12px; /* Add padding for a box effect */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+/* Box Design for Home Link */
+nav a.home {
+    background-color: #ffc107; /* Highlight color for the Home link */
+    color: #333;
+}
+
+/* Hover Effect for Navbar Links */
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover for other links */
+    border-radius: 5px;
+}
+/* General styles for the section and paragraph container */
+section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    margin-bottom: 30px;
+    margin-left:60px;
+    margin-right: 40px;
+}
+
+.paragraph h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.paragraph p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* List styles */
+.paragraph ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.paragraph ul li {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Additional styling */
+.paragraph ul li::marker {
+    color: #0073e6; /* Customize list marker color */
+}
+
+.paragraph p:last-of-type {
+    margin-bottom: 0;
+}
+/* Add padding to the left side of the main content section */
+section {
+    padding: 20px;
+    padding-left: 40px; /* Adjust this value for the desired left gap */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/*image*/
+/* Container for paragraphs and middle image */
+.imagemiddle {
+    max-width: 1000px; /* Limits width for better readability */
+    margin: 0 auto; /* Centers content horizontally */
+    padding: 20px;
+}
+
+/* Paragraph styling */
+.paragraph h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.paragraph p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Middle image styling */
+.imagemiddle {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.imagemiddle img {
+    max-width: 100%; /* Makes the image responsive */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
